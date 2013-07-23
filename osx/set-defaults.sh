@@ -39,6 +39,9 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Disable window animations and Get Info animations in Finder
 # defaults write com.apple.finder DisableAllAnimations -bool true
 
+echo "Show hidden files in Finder"
+defaults write com.apple.Finder AppleShowAllFiles YES
+
 echo "Show all filename extensions in Finder"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
