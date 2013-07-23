@@ -1,0 +1,35 @@
+#!/bin/sh
+# Setup a machine for Sublime Text 2
+set -x
+
+# symlink settings in
+sublime_dir=~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+mv "$sublime_dir/User" "$sublime_dir/User.backup"
+ln -s "$ZSH/sublime/User" "$sublime_dir"
+
+# Install my favourite packages
+cd $sublime_dir
+
+git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+cd "Package Control"
+git checkout python3
+cd $sublime_dir
+
+git clone https://github.com/kemayo/sublime-text-2-git.git "Git"
+cd Git
+git checkout python3
+cd $sublime_dir
+
+git clone https://github.com/titoBouzout/SideBarEnhancements.git "SideBarEnhancements"
+cd SideBarEnhancements
+git checkout st3
+cd $sublime_dir
+
+git clone https://github.com/SublimeCodeIntel/SublimeCodeIntel.git "SublimeCodeIntel"
+cd SublimeCodeIntel
+git checkout py3
+cd $sublime_dir
+
+git clone https://github.com/gfreezy/SublimeLinter.git "SublimeLinter"
+
+git clone https://github.com/buymeasoda/soda-theme "Theme - Soda"
