@@ -4,6 +4,8 @@
 
 DOTFILES_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
+cd $DOTFILES_ROOT
+
 set -e
 
 echo ''
