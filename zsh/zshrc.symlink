@@ -48,8 +48,14 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-# load the path files
+# Load all of our zsh configz
 for file in $HOME/.dotfiles/**/*.zsh
 do
   source $file
 done
+
+# Super secret shiz
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
