@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 #
-# bootstrap installs things.
+# Installs all of yo' dotfiles
+#
+# You can set the following environment variables, to simplify running this
+# through a configuration manager like chef:
+#
+#   git_authorname  Value for the user.name git config
+#   git_authoremail Value for the user.email git config
+#
+#   overwrite_all   Overwrite all existing files
+#   backup_all      Backup all existing files
+#   skip_all        Skip all existing files
+#
+#   (You should probably only set one of the above to true)
 
 DOTFILES_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
@@ -61,9 +73,9 @@ link_files () {
 install_dotfiles () {
   info 'installing dotfiles'
 
-  overwrite_all=false
-  backup_all=false
-  skip_all=false
+  : ${overwrite_all:=false}
+  : ${backup_all:=false}
+  : ${skip_all:=false}
 
   for source in `find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink`
   do
