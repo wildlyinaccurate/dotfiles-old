@@ -20,8 +20,6 @@
         editor = vim
 [credential]
         helper = GIT_CREDENTIAL_HELPER
-[help]
-        autocorrect = 1
 [hub]
         protocol = https
 [user]
