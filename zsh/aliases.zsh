@@ -1,5 +1,7 @@
 alias reload!='. ~/.zshrc'
 
+alias dss='dig +search +short'
+
 alias svnst="svn st --ignore-externals | grep -v '^X'"
 alias svnlog="svn log --stop-on-copy"
 alias svnupdate="svn update --ignore-externals"
