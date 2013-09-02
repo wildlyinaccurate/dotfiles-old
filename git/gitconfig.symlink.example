@@ -7,6 +7,8 @@
         wtf = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count = !git shortlog -sn
+        standup = log --since '1 day ago' --oneline --author AUTHOREMAIL
+        undo = reset --soft HEAD^
 [branch]
         autosetuprebase = always
 [color]
