@@ -9,6 +9,7 @@
         count = !git shortlog -sn
         standup = log --since '1 day ago' --oneline --author AUTHOREMAIL
         undo = reset --soft HEAD^
+        graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
 [branch]
         autosetuprebase = always
 [color]
