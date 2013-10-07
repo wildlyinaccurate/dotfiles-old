@@ -28,3 +28,5 @@
 [user]
         name = AUTHORNAME
         email = AUTHOREMAIL
+[url "https://"]
+	insteadOf = git://
