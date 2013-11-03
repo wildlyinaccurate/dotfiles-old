@@ -79,7 +79,14 @@ install_dotfiles () {
 
   for source in `find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink`
   do
-    dest="$HOME/.`basename \"${source%.*}\"`"
+    # Symlinked files in "dot" directories are treated differently: they are
+    # symlinked to the same dot directory in $HOME
+    if [ ${source:0:1} = "." ]
+    then
+        dest="$HOME/${source%.*}"
+    else
+        dest="$HOME/.`basename \"${source%.*}\"`"
+    fi
 
     if [ -f $dest ] || [ -d $dest ]
     then
