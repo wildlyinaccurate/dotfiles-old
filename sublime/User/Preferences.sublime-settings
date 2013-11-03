@@ -1,36 +1,39 @@
 {
-    "color_scheme": "Packages/Theme - Refined/Color Schemes/Monokai Refined.tmTheme",
-    "font_face": "Droid Sans Mono",
-    "font_size": 12,
-    "font_options": ["no_italic"],
-    "highlight_line": true,
-    "line_padding_top": 3,
-    "line_padding_bottom": 3,
-
-    "default_line_ending": "unix",
-    "detect_indentation": true,
-    "ensure_newline_at_eof_on_save": true,
-    "trim_trailing_white_space_on_save": true,
-    "translate_tabs_to_spaces": true,
-
-    "auto_complete_commit_on_tab": true,
-
-    "detect_slow_plugins": false,
-    "drag_text": false,
-    "find_selected_text": true,
-    "highlight_modified_tabs": true,
-    "scroll_past_end": true,
-
-    "reveal-on-activate": false,
-
-    "folder_exclude_patterns": [
-        ".sass-cache",
-        ".svn",
-        ".git",
-        ".hg",
-        ".tmp",
-        "CVS",
-        "node_modules"
-    ],
-    "ignored_packages": ["Vintage"]
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Theme - Refined/Color Schemes/Monokai Refined.tmTheme",
+	"default_line_ending": "unix",
+	"detect_indentation": true,
+	"detect_slow_plugins": false,
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		".svn",
+		".git",
+		".hg",
+		".tmp",
+		"CVS",
+		"node_modules"
+	],
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"no_italic"
+	],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
+	"reveal-on-activate": false,
+	"scroll_past_end": true,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
