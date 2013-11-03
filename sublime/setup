@@ -3,7 +3,13 @@
 set -x
 
 # symlink settings in
-sublime_dir=~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+if [ "$(uname -s)" == "Darwin" ]
+then
+    sublime_dir="~/Library/Application Support/Sublime Text 3"
+else
+    sublime_dir="~/.config/sublime-text-3"
+fi
+
 mv "$sublime_dir/User" "$sublime_dir/User.backup"
 ln -s "$ZSH/sublime/User" "$sublime_dir"
 
