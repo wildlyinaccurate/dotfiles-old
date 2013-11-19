@@ -81,11 +81,17 @@ install_dotfiles () {
   do
     # Symlinked files in "dot" directories are treated differently: they are
     # symlinked to the same dot directory in $HOME
-    if [ ${source:0:1} = "." ]
+    relative_source=${source#$DOTFILES_ROOT/}
+
+    if [ ${relative_source:0:1} = "." ]
     then
-        dest="$HOME/${source%.*}"
+        dest="$HOME/${relative_source%.*}"
+
+	# Ensure the sub-directory exists
+	dest_dir=`dirname $dest`
+	[[ ! -d $dest_dir ]] && mkdir -p $dest_dir
     else
-        dest="$HOME/.`basename \"${source%.*}\"`"
+        dest="$HOME/.`basename \"${relative_source%.*}\"`"
     fi
 
     if [ -f $dest ] || [ -d $dest ]
