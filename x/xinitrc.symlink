@@ -1,4 +1,7 @@
 xrdb -merge ~/.Xresources
+xset r rate 180
+
 numlockx on
+
 exec i3
 
