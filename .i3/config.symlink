@@ -28,6 +28,9 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
+# lock screen
+bindsym $mod+Shift+L exec i3lock -c 000000
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -41,10 +44,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+J move left
-bindsym $mod+Shift+K move down
-bindsym $mod+Shift+L move up
-bindsym $mod+Shift+colon move right
+# bindsym $mod+Shift+J move left
+# bindsym $mod+Shift+K move down
+# bindsym $mod+Shift+L move up
+# bindsym $mod+Shift+colon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
