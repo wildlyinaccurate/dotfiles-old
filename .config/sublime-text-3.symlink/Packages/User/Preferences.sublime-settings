@@ -31,7 +31,7 @@
 	],
 	"line_padding_bottom": 4,
 	"line_padding_top": 4,
-	"reveal-on-activate": false,
+	"reveal-on-activate": true,
 	"scroll_past_end": true,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
