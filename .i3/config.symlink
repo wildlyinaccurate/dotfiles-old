@@ -9,8 +9,6 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec_always --no-startup-id xrandr --output DVI-0 --auto
-exec_always --no-startup-id xrandr --output HDMI-0 --off
 exec_always redshift
 
 set $mod Mod4
