@@ -15,13 +15,17 @@ general {
         interval = 5
 }
 
-order += "disk /"
-order += "run_watch VPN"
+order += "battery 0"
 order += "wireless wlan0"
 order += "ethernet eth1"
 order += "cpu_temperature 0"
 order += "load"
 order += "tztime local"
+
+battery 0 {
+	format = "%percentage (%remaining)"
+	low_threshold = 10
+}
 
 cpu_temperature 0 {
         max_threshold = 45
@@ -39,22 +43,10 @@ ethernet eth1 {
         format_down = "E: down"
 }
 
-run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
-}
-
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
-}
-
 tztime local {
         format = "%d %h %Y %H:%M:%S"
 }
 
 load {
         format = "%1min"
-}
-
-disk "/" {
-        format = "%free"
 }
