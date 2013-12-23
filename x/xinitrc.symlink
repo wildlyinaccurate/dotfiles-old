@@ -2,6 +2,6 @@ xrdb -merge ~/.Xresources
 xset r rate 180
 
 numlockx on
+syndaemon -t -k -i 2 -d
 
 exec i3
-
