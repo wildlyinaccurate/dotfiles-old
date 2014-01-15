@@ -1,6 +1,17 @@
 Vagrant.configure("2") do |config|
-  config.vm.provision "puppet" do |puppet|
-    puppet.manifests_path = "~/.vagrant.d/manifests"
-    puppet.manifest_file = "default.pp"
+
+  config.omnibus.chef_version = :latest
+
+  config.vm.provision "chef_solo" do |chef|
+    chef.cookbooks_path = "~/.vagrant.d/cookbooks"
+    chef.add_recipe "dotfiles"
+
+    chef.json = {
+      :github => {
+        :name => "Joseph Wynn",
+        :email => ""
+      }
+    }
   end
+
 end
