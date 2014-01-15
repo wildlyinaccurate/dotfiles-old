@@ -36,7 +36,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+d exec dmenu_run
 
 # lock screen
-bindsym $mod+Shift+L exec i3lock -c 000000
+bindsym $mod+Shift+L exec i3lock --color 000000
 
 # change focus
 bindsym $mod+j focus left
