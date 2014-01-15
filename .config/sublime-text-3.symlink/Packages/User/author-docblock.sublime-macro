@@ -1,0 +1,51 @@
+[
+	{
+		"args":
+		{
+			"file": "Packages/DocBlockr/jsdocs-auto-complete.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"characters": "author"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": " Joseph"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": " Wynn"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": " <joseph"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": ".wynn@rightster.c"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "om>"
+		},
+		"command": "insert"
+	}
+]
