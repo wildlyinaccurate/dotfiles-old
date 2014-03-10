@@ -11,7 +11,8 @@
 
 set $mod Mod4
 
-exec_always gnome-settings-daemon
+exec gnome-settings-daemon
+exec redshift
 
 # Laptop function keys
 # bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
