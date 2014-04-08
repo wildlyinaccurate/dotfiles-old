@@ -1,12 +1,10 @@
 {
-	"version": "2012.06.06.1611.2",
-
-    "confirm_before_deleting": false,
-
-    "disabled_menuitem_edit": true,
-    "disabled_menuitem_run": true,
-    "disabled_menuitem_open_in_browser": true,
-    "disabled_menuitem_open_in_new_window": true,
-    "disabled_menuitem_find_in_project": true,
-    "disabled_menuitem_empty": true,
+	"confirm_before_deleting": false,
+	"disabled_menuitem_edit": true,
+	"disabled_menuitem_empty": true,
+	"disabled_menuitem_find_in_project": true,
+	"disabled_menuitem_open_in_browser": true,
+	"disabled_menuitem_open_in_new_window": true,
+	"disabled_menuitem_run": true,
+	"version": "setting no longer updated"
 }
