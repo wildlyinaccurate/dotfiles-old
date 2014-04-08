@@ -1,6 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Theme - Refined/Color Schemes/Monokai Refined.tmTheme",
+	"color_scheme": "Packages/User/Monokai Refined (SL).tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"detect_slow_plugins": false,

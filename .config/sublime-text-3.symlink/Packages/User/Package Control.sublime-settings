@@ -6,8 +6,14 @@
 		"Markdown Preview",
 		"Sass",
 		"SideBarEnhancements",
-		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-coffeelint",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
 		"SyncedSideBar",
 		"Theme - Soda"
 	]
