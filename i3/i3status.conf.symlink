@@ -15,15 +15,19 @@ general {
         interval = 5
 }
 
-order += "disk /"
+order += "battery 0"
 order += "wireless wlan0"
-order += "ethernet enp3s0"
 order += "cpu_temperature 0"
 order += "load"
 order += "tztime local"
 
+battery 0 {
+	format = "%percentage (%remaining)"
+	low_threshold = 10
+}
+
 cpu_temperature 0 {
-        max_threshold = 45
+        max_threshold = 65
         path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
@@ -32,20 +36,10 @@ wireless wlan0 {
         format_down = "W: down"
 }
 
-ethernet enp3s0 {
-        # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
-}
-
 tztime local {
         format = "%a, %d %h %Y %H:%M:%S"
 }
 
 load {
         format = "%1min"
-}
-
-disk "/" {
-        format = "%free"
 }
