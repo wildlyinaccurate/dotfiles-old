@@ -1,6 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/User/Monokai Refined (SL).tmTheme",
+	"color_scheme": "Packages/User/Danro (SL).tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
@@ -27,7 +27,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"SublimeLinter-json"
 	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,

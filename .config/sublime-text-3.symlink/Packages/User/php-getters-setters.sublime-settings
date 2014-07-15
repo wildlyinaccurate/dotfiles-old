@@ -1,0 +1,4 @@
+{
+    "registerTemplates" : ["camelCaseSimple"],
+    "template" : "camelCaseSimple"
+}

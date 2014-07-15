@@ -32,12 +32,13 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.org/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.org/en/latest/linter_settings.html).
 
-You can configure `scss-lint` options in the way you would from the command line, with `.scss-lint.yml` files. Plugin takes configuration file from your home directory `~/.scss-lint.yml`. For more information, see the [scss-lint page](https://github.com/causes/scss-lint). Default configuration file can be found [here](https://github.com/causes/scss-lint/blob/master/config/default.yml).
+You can configure `scss-lint` options in the way you would from the command line, with `.scss-lint.yml` files. If a `.scss-lint.yml` file is not found in the file hierarchy starting with the linted file, your home directory will also be searched. For more information, see the [scss-lint page](https://github.com/causes/scss-lint). Default configuration file can be found [here](https://github.com/causes/scss-lint/blob/master/config/default.yml).
 
 In addition to the standard SublimeLinter settings, SublimeLinter-scss-lint provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline](http://sublimelinter.readthedocs.org/en/latest/settings.html#inline-settings).
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
+|bundle-exec|runs scss-lint as "bundle exec scss-lint" instead of "scss-lint"| | |
 |--include-linter|Specify which linters you specifically want to run| |&#10003;|
 |--exclude-linter|Specify which linters you don't want to run| |&#10003;|
 
