@@ -1,6 +1,8 @@
 --type-add=css=.scss
 --type-add=ruby=.feature
 --type-add=html=.twig
+--type-add=php=.phtml
+--type-add=html=.phtml
 
 --type-set=coffeescript=.coffee
 --type-set=coffee=.coffee
