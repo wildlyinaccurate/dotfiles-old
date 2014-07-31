@@ -19,6 +19,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-php",
 		"SyncedSideBar",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Twig"
 	]
 }
