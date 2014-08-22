@@ -25,6 +25,8 @@
         helper = GIT_CREDENTIAL_HELPER
 [hub]
         protocol = https
+[push]
+	default = simple
 [user]
         name = AUTHORNAME
         email = AUTHOREMAIL
