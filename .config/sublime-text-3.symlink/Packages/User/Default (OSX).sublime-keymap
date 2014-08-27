@@ -19,5 +19,10 @@
     { "keys": ["ctrl+]"], "command": "indent" },
     { "keys": ["ctrl+["], "command": "unindent" },
 
-    { "keys": ["f13"], "command": "reindent" }
+    { "keys": ["f13"], "command": "reindent" },
+
+    { "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+    { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+    { "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+    { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } }
 ]
