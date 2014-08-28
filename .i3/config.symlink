@@ -11,6 +11,10 @@
 
 exec_always redshift
 
+# Fix Spotify flickering issues
+# http://community.spotify.com/t5/Help-Desktop-Linux-Mac-and/Spotify-linux-preview-troubles-in-i3/m-p/745525/highlight/true#M80696
+for_window [class="^Spotify Premium"] floating enable
+
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
