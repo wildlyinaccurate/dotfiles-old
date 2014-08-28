@@ -26,7 +26,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec i3-dmenu-desktop --dmenu="dmenu -nb '#2D2D2D' -nf '#888888' -sb '#D64937' -sf '#DEDEDE' -l 10 -i"
+
 
 # lock screen
 bindsym $mod+Shift+L exec i3lock -c 000000
