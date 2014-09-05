@@ -9,11 +9,23 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec_always redshift
-
 # Fix Spotify flickering issues
 # http://community.spotify.com/t5/Help-Desktop-Linux-Mac-and/Spotify-linux-preview-troubles-in-i3/m-p/745525/highlight/true#M80696
 for_window [class="^Spotify Premium"] floating enable
+
+exec --no-startup-id redshift
+
+# Status bar styling
+font pango:Anonymous Pro 10
+
+bar {
+    position top
+    status_command i3status
+    colors {
+        background #333333
+        statusline #cdcdcd
+    }
+}
 
 set $mod Mod4
 
@@ -143,9 +155,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}
