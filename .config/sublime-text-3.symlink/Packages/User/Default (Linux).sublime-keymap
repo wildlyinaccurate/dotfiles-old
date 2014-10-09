@@ -9,5 +9,11 @@
 
     { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
     { "keys": ["ctrl+s"], "command": "save_all" },
-    { "keys": ["ctrl+shift+w"], "command": "close_all" }
+    { "keys": ["ctrl+shift+w"], "command": "close_all" },
+
+    { "keys": ["ctrl+shift+["], "command": "bracketeer_select" },
+    { "keys": ["alt+["], "command": "bracketeer_goto", "args": { "goto": "left" } },
+    { "keys": ["alt+]"], "command": "bracketeer_goto", "args": { "goto": "right" } },
+    { "keys": ["ctrl+alt+["], "command": "bracketeer_goto", "args": { "goto": "both" } },
+    { "keys": ["ctrl+alt+]"], "command": "bracketeer_goto", "args": { "goto": "both" } }
 ]
