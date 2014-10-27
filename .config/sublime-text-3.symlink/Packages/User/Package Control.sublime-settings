@@ -10,7 +10,6 @@
 		"PlainTasks",
 		"Sass",
 		"SideBarEnhancements",
-		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
 		"SublimeLinter-coffeelint",
@@ -21,6 +20,6 @@
 		"SublimeLinter-php",
 		"SyncedSideBar",
 		"Theme - Soda",
-		"Xdebug Client"
+		"Twig"
 	]
 }
