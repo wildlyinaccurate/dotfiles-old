@@ -57,7 +57,15 @@ do
 done
 
 # Super secret shiz
-if [[ -a ~/.localrc ]]
+if [[ -e ~/.localrc ]]
 then
   source ~/.localrc
+fi
+
+# chruby
+if [[ -e /usr/local/share/chruby/chruby.sh ]]
+then
+  source /usr/local/share/chruby/chruby.sh
+
+  chruby ruby-2.1
 fi
