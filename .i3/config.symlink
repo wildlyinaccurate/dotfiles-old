@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 exec --no-startup-id redshift
+exec --no-startup-id nm-applet
 exec --no-startup-id unity-settings-daemon
 
 # Fix Spotify flickering issues
