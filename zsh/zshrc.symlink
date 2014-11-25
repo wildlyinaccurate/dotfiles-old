@@ -40,9 +40,6 @@ plugins=(history-substring-search git vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
-# Load RVM as a function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 path=("$HOME/bin" "$path[@]")
 
 # function git_prompt_info() {
