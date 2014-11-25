@@ -18,13 +18,13 @@ exec --no-startup-id unity-settings-daemon
 for_window [class="^Spotify Premium"] floating enable
 
 # Status bar styling
-font pango:Source Code Pro 9
+font pango:Source Code Pro 11
 
 bar {
     position top
     status_command i3status
     colors {
-        background #333333
+        background #464646
         statusline #cdcdcd
     }
 }
