@@ -12,7 +12,7 @@ general {
         color_degraded = "#f0ad4e"
         color_bad = "#d9534f"
         color_separator = "#dedede"
-        interval = 5
+        interval = 3
 }
 
 order += "battery 0"
