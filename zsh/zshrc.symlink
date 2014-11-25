@@ -36,7 +36,7 @@ DISABLE_CORRECTION="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vagrant)
+plugins=(history-substring-search git vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
