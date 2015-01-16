@@ -4,7 +4,7 @@ servers = (
     chatnet = "BBC";
     port = "6697";
     use_ssl = "yes";
-    ssl_cert = "/home/joseph/Certificates/bbc-joseph-wynn-dev.pem";
+    ssl_cert = "~/dev/responsive-news/scripts/certs/certificate.pem";
     ssl_verify = "no";
     autoconnect = "yes";
   }
@@ -15,7 +15,8 @@ chatnets = { BBC = { type = "IRC"; }; };
 channels = (
   { name = "#news"; chatnet = "BBC"; autojoin = "yes"; },
   { name = "#lollibot"; chatnet = "BBC"; autojoin = "yes"; },
-  { name = "#frameworks"; chatnet = "BBC"; autojoin = "yes"; }
+  { name = "#frameworks"; chatnet = "BBC"; autojoin = "yes"; },
+  { name = "#mews"; chatnet = "BBC"; autojoin = "yes"; }
 );
 
 aliases = {
