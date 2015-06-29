@@ -1,4 +1,5 @@
 .config/sublime-text-3.symlink/Backup
-sublime/User/Package\ Control.sublime-settings
-sublime/User/Package Control.last-run
+.config/sublime-text-3.symlink/Packages/User/Color Highlighter/icons
+.config/sublime-text-3.symlink/Packages/SublimeCodeIntel/
+.config/sublime-text-3.symlink/Packages/SublimeLinter/messages
 git/gitconfig.symlink
