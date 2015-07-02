@@ -12,7 +12,7 @@ general {
     color_degraded = "#f0ad4e"
     color_bad = "#d9534f"
     color_separator = "#dedede"
-    interval = 3
+    interval = 5
 }
 
 order += "wireless _first_"
