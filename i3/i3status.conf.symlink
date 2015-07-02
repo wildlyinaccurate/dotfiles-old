@@ -7,39 +7,56 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        color_good = "#5cb85c"
-        color_degraded = "#f0ad4e"
-        color_bad = "#d9534f"
-        color_separator = "#dedede"
-        interval = 3
+    colors = true
+    color_good = "#5cb85c"
+    color_degraded = "#f0ad4e"
+    color_bad = "#d9534f"
+    color_separator = "#dedede"
+    interval = 3
 }
 
-order += "battery 0"
-order += "wireless wlan0"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "cpu_usage"
 order += "cpu_temperature 0"
-order += "load"
+order += "battery 0"
 order += "tztime local"
 
-battery 0 {
-	format = "%percentage (%remaining)"
-	low_threshold = 10
+cpu_usage {
+    format = " cpu  %usage "
 }
 
 cpu_temperature 0 {
-        max_threshold = 65
-        path = "/sys/devices/platform/coretemp.0/temp1_input"
+    max_threshold = 65
+    format = "%degrees °C"
+    path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
 }
 
-wireless wlan0 {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+disk "/" {
+    format = " hdd %avail "
+}
+
+wireless _first_ {
+    format_up = " wlan: %essid %quality "
+    format_down = " no wlan "
+}
+ethernet _first_ {
+    format_up = " lan: %ip %speed "
+    format_down = " no lan "
+}
+
+battery 0 {
+    format = " %status %percentage (%remaining)"
+    format_down = "No battery"
+    last_full_capacity = true
+    integer_battery_capacity = true
+    status_chr = "⚡"
+    status_bat = "☉"
+    status_full = "☻"
+    low_threshold = 30
+    threshold_type = time
 }
 
 tztime local {
-        format = "%a, %d %h %Y %H:%M:%S"
-}
-
-load {
-        format = "%1min"
+    format = "%e %b %Y %H:%M:%S"
 }
