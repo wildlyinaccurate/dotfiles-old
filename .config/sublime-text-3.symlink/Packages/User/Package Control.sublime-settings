@@ -10,12 +10,15 @@
 		"Color Highlighter",
 		"Cucumber",
 		"DocBlockr",
+		"Elm Language Support",
 		"Git",
 		"INI",
 		"Markdown Preview",
+		"Material Theme",
 		"Package Control",
 		"PHP Getters and Setters",
 		"Puppet",
+		"PureScript",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
@@ -28,6 +31,7 @@
 		"SublimeLinter-php",
 		"SyncedSideBar",
 		"Theme - Soda",
+		"Theme - Spaceblack",
 		"Twig"
 	]
 }
