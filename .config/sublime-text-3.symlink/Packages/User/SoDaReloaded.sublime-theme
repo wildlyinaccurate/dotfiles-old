@@ -1,0 +1,66 @@
+[
+    {
+        "class": "tree_row",
+        "layer0.texture": "Theme - Default/row_highlight_dark.png",
+        "layer0.tint": [
+            114,
+            104,
+            103
+        ]
+    },
+    {
+        "class": "sidebar_container",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [
+            114,
+            104,
+            103
+        ]
+    },
+    {
+        "class": "sidebar_tree",
+        "dark_content": true,
+        "layer0.opacity": 1,
+        "layer0.tint": [
+            64,
+            54,
+            53
+        ]
+    },
+    {
+        "class": "sidebar_label",
+        "color": [
+            200,
+            200,
+            200
+        ]
+    },
+    {
+        "class": "sidebar_heading",
+        "shadow_offset": [
+            0,
+            0
+        ]
+    },
+    {
+        "class": "disclosure_button_control",
+        "layer0.tint": [
+            114,
+            104,
+            103
+        ],
+        "layer1.tint": [
+            114,
+            104,
+            103
+        ]
+    },
+    {
+        "class": "sidebar_heading",
+        "color": [
+            154,
+            144,
+            143
+        ]
+    }
+]
