@@ -1,6 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/User/Danro (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/mud (SL).tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
@@ -34,7 +34,7 @@
 	"reveal-on-activate": true,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "SoDaReloaded.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
