@@ -15,13 +15,18 @@ ZSH_THEME="lambda"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(history-substring-search git vagrant)
+plugins=(git vagrant brew)
 
 source $ZSH/oh-my-zsh.sh
 
 path=("$HOME/bin" "$path[@]")
 
-HISTFILE="${HOME}/.history/$(date -u +%Y/%m/%d.%H.%M.%S)_${HOSTNAME_SHORT}_$$"
+HISTFILE="${HOME}/.history/$(date -u +%Y/%m)_${HOST}"
+HISTFILE_DIR=$(dirname $HISTFILE)
+
+if [ ! -f $HISTFILE_DIR ]; then
+  mkdir -p $HISTFILE_DIR
+fi
 
 # Load all of our zsh configz
 for file in $HOME/.dotfiles/**/*.zsh
@@ -35,10 +40,10 @@ then
   source ~/.localrc
 fi
 
-# chruby
-if [[ -e /usr/local/share/chruby/chruby.sh ]]
-then
-  source /usr/local/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
-  chruby ruby-2.1
-fi
+# Ctrl+arrow support in OSX
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
