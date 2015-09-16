@@ -1,0 +1,33 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"ApacheConf.tmLanguage",
+		"Cucumber",
+		"Dayle Rees Color Schemes",
+		"DocBlockr",
+		"Elm Language Support",
+		"Git",
+		"INI",
+		"JavaScriptNext - ES6 Syntax",
+		"Markdown Preview",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-elm-make",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeLinter-ruby",
+		"SyncedSideBar",
+		"SyncedSidebarBg",
+		"Theme - SoDaReloaded"
+	]
+}

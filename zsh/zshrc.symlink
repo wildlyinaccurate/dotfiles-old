@@ -35,10 +35,10 @@ then
   source ~/.localrc
 fi
 
-# chruby
-if [[ -e /usr/local/share/chruby/chruby.sh ]]
-then
-  source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
-  chruby ruby-2.1
-fi
+# Ctrl+arrow support in OSX
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
