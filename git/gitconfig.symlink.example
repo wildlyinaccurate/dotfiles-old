@@ -20,7 +20,7 @@
 [core]
         autocrlf = input
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = subl -w
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [hub]

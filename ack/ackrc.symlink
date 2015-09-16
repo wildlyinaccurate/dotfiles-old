@@ -4,8 +4,12 @@
 --type-add=php=.phtml
 --type-add=html=.phtml
 
+--type-set=sass=.scss
 --type-set=coffeescript=.coffee
 --type-set=coffee=.coffee
 
 --ignore-dir=.sass-cache/
 --ignore-dir=node_modules/
+
+
+--type-add=ini=.ini

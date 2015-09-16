@@ -1,40 +1,42 @@
 {
-	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/User/SublimeLinter/mud (SL).tmTheme",
-	"default_line_ending": "unix",
-	"detect_indentation": true,
-	"detect_slow_plugins": false,
-	"drag_text": false,
-	"ensure_newline_at_eof_on_save": true,
-	"find_selected_text": true,
-	"folder_exclude_patterns":
-	[
-		".sass-cache",
-		".svn",
-		".git",
-		".hg",
-		".tmp",
-		".vagrant",
-		"node_modules"
-	],
-	"font_face": "Source Code Pro",
-	"font_options":
-	[
-		"no_italic"
-	],
-	"font_size": 12,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
-	"reveal-on-activate": true,
-	"scroll_past_end": true,
-	"scroll_speed": 0,
-	"theme": "SoDaReloaded.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+    "auto_complete_commit_on_tab": true,
+    "color_scheme": "Packages/User/SublimeLinter/mud (SL).tmTheme",
+    "default_line_ending": "unix",
+    "detect_indentation": true,
+    "detect_slow_plugins": false,
+    "drag_text": false,
+    "ensure_newline_at_eof_on_save": true,
+    "find_selected_text": true,
+    "folder_exclude_patterns":
+    [
+        ".sass-cache",
+        ".svn",
+        ".git",
+        ".hg",
+        ".tmp",
+        ".vagrant",
+        "node_modules"
+    ],
+    "font_face": "Source Code Pro",
+    "font_options":
+    [
+        "no_italic"
+    ],
+    "font_size": 12,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
+    "reveal-on-activate": true,
+    "always_show_minimap_viewport": true,
+    "scroll_past_end": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "theme": "SoDaReloaded.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }
