@@ -29,7 +29,7 @@ if [ ! -f $HISTFILE_DIR ]; then
 fi
 
 # Load all of our zsh configz
-for file in $HOME/.dotfiles/**/*.zsh
+for file in $DOTFILES/**/*.zsh
 do
   source $file
 done
