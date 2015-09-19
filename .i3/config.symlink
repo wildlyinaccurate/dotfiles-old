@@ -11,6 +11,11 @@ set $mod Mod4
 new_window pixel 2
 new_float normal
 
+# Media buttons
+bindsym XF86AudioPlay exec --no-startup-id ~/bin/spotify-cmd PlayPause
+bindsym XF86AudioPrev exec --no-startup-id ~/bin/spotify-cmd Previous
+bindsym XF86AudioNext exec --no-startup-id ~/bin/spotify-cmd Next
+
 # Hide borders
 hide_edge_borders none
 

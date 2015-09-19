@@ -83,7 +83,7 @@ install_dotfiles () {
     # symlinked to the same dot directory in $HOME
     relative_source=${source#$DOTFILES_ROOT/}
 
-    if [ ${relative_source:0:1} = "." ]
+    if [ ${relative_source:0:1} = "." ] || [ $(dirname $relative_source) = 'bin' ]
     then
         dest="$HOME/${relative_source%.*}"
 
