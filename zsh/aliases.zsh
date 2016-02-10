@@ -12,5 +12,3 @@ alias vr='vagrant reload'
 alias vp='vagrant provision'
 alias vrp='vagrant reload --provision'
 alias vssh='vagrant ssh'
-
-alias subl='subl3'
