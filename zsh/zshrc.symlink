@@ -19,9 +19,7 @@ plugins=(git vagrant brew)
 
 source $ZSH/oh-my-zsh.sh
 
-path=("$HOME/bin" "$path[@]")
-
-HISTFILE="${HOME}/.history/$(date -u +%Y/%m)_${HOST}"
+HISTFILE="${HOME}/.history/$(date -u +%Y)_${HOST}"
 HISTFILE_DIR=$(dirname $HISTFILE)
 
 if [ ! -f $HISTFILE_DIR ]; then
@@ -47,3 +45,11 @@ source /usr/local/share/chruby/auto.sh
 bindkey -e
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
+
+eval $(docker-machine env default)
+
+path=("$HOME/bin" "$path[@]")
+
+nvm use system
+chruby 2.3.0
+ruby -v

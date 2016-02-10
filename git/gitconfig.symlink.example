@@ -12,6 +12,8 @@
         graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
 [branch]
         autosetuprebase = always
+[diff]
+        algorithm = patience
 [color]
         diff = auto
         status = auto
@@ -26,9 +28,9 @@
 [hub]
         protocol = https
 [push]
-	default = simple
+        default = simple
 [user]
         name = AUTHORNAME
         email = AUTHOREMAIL
 [url "https://"]
-	insteadOf = git://
+        insteadOf = git://

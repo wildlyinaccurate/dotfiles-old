@@ -12,3 +12,7 @@ alias vr='vagrant reload'
 alias vp='vagrant provision'
 alias vrp='vagrant reload --provision'
 alias vssh='vagrant ssh'
+
+alias cukes='bundle exec cucumber'
+
+alias morph-npm="npm --registry https://npm.morph.int.tools.bbc.co.uk --cert=\"$(cat /etc/pki/certificate.pem)\" --key=\"$(cat /etc/pki/certificate.pem)\" --cafile=/etc/pki/ca-bundle.crt"
