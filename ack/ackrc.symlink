@@ -3,14 +3,17 @@
 --type-add=html=.twig
 --type-add=php=.phtml
 --type-add=html=.phtml
---type-add=jsx=.jsx
 
 --type-set=sass=.scss
 --type-set=coffeescript=.coffee
 --type-set=coffee=.coffee
+--type-set=jsx=.jsx
 
 --ignore-dir=.sass-cache/
 --ignore-dir=node_modules/
 
 
 --type-add=ini=.ini
+
+--type-set=markdown=.md
+--type-add=md=.md

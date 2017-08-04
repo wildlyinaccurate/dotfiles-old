@@ -38,7 +38,7 @@ STREAM_STDOUT = 1
 STREAM_STDERR = 2
 STREAM_BOTH = STREAM_STDOUT + STREAM_STDERR
 
-PYTHON_CMD_RE = re.compile(r'(?P<script>[^@]+)?@python(?P<version>[\d\.]+)?')
+PYTHON_CMD_RE = re.compile(r'(?P<script>[^@]+)?@python(?P<version>[\d\.]+|.+)?')
 VERSION_RE = re.compile(r'(?P<major>\d+)(?:\.(?P<minor>\d+))?')
 
 INLINE_SETTINGS_RE = re.compile(r'(?i).*?\[sublimelinter[ ]+(?P<settings>[^\]]+)\]')
@@ -50,6 +50,8 @@ MARK_COLOR_RE = (
     r'(\s*<string>sublimelinter\.{}</string>\s*\r?\n'
     r'\s*<key>settings</key>\s*\r?\n'
     r'\s*<dict>\s*\r?\n'
+    r'(?:\s*<key>(?:background|fontStyle)</key>\s*\r?\n'
+    r'\s*<string>.*?</string>\r?\n)*'
     r'\s*<key>foreground</key>\s*\r?\n'
     r'\s*<string>)#.+?(</string>\s*\r?\n)'
 )
@@ -801,6 +803,9 @@ def find_python(version=None, script=None, module=None):
         # No version was specified, get the default python
         path = find_executable('python')
         persist.debug('find_python: default python =', path)
+    elif os.path.isfile(version):
+        # Specified version is a path to an executable, use it instead.
+        path = version
     else:
         version = str(version)
         requested_version = extract_major_minor_version(version)
@@ -913,7 +918,10 @@ def find_windows_python(version):
         # with the <major><minor> version number, so for matching with the version
         # passed in, strip any decimal points.
         stripped_version = version.replace('.', '')
-        prefix = os.path.abspath('\\Python')
+        prefix = os.path.abspath(os.path.join(
+            os.environ.get("SYSTEMROOT", "\\")[:2],
+            'Python'
+        ))
         prefix_len = len(prefix)
         dirs = sorted(glob(prefix + '*'), reverse=True)
         from . import persist
@@ -942,7 +950,8 @@ def find_python_script(python_path, script):
     if sublime.platform() in ('osx', 'linux'):
         pyenv = which('pyenv')
         if pyenv:
-            out = run_shell_cmd((pyenv, 'which', script)).strip().decode()
+            out = run_shell_cmd((os.environ['SHELL'], '-l', '-c',
+                                 'echo ""; {} which {}'.format(pyenv, script))).strip().decode().split('\n')[-1]
             if os.path.isfile(out):
                 return out
         return which(script)

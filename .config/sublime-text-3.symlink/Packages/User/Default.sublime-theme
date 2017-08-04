@@ -2,18 +2,18 @@
     {
         "class": "tree_row",
         "layer0.tint": [
-            114,
-            104,
-            103
+            90,
+            92,
+            104
         ]
     },
     {
         "class": "sidebar_container",
         "layer0.opacity": 1.0,
         "layer0.tint": [
-            114,
-            104,
-            103
+            90,
+            92,
+            104
         ]
     },
     {
@@ -21,17 +21,17 @@
         "dark_content": true,
         "layer0.opacity": 1,
         "layer0.tint": [
-            64,
-            54,
-            53
+            40,
+            42,
+            54
         ]
     },
     {
         "class": "sidebar_label",
         "color": [
-            214,
-            204,
-            203
+            220,
+            222,
+            234
         ]
     },
     {
@@ -44,97 +44,97 @@
     {
         "class": "disclosure_button_control",
         "layer0.tint": [
-            154,
-            144,
-            143
+            130,
+            132,
+            144
         ],
         "layer1.tint": [
-            214,
-            204,
-            203
+            190,
+            192,
+            204
         ]
     },
     {
         "class": "fold_button_control",
         "layer0.tint": [
-            154,
-            144,
-            143
+            130,
+            132,
+            144
         ],
         "layer1.tint": [
-            214,
-            204,
-            203
+            190,
+            192,
+            204
         ]
     },
     {
         "class": "scroll_tabs_left_button",
         "layer0.tint": [
-            184,
-            174,
-            173
+            160,
+            162,
+            174
         ],
         "layer1.tint": [
-            244,
-            234,
-            233
+            220,
+            222,
+            234
         ]
     },
     {
         "class": "scroll_tabs_right_button",
         "layer0.tint": [
-            184,
-            174,
-            173
+            160,
+            162,
+            174
         ],
         "layer1.tint": [
-            244,
-            234,
-            233
+            220,
+            222,
+            234
         ]
     },
     {
         "class": "show_tabs_dropdown_button",
         "layer0.tint": [
-            184,
-            174,
-            173
+            160,
+            162,
+            174
         ],
         "layer1.tint": [
-            244,
-            234,
-            233
+            220,
+            222,
+            234
         ]
     },
     {
         "class": "icon_file_type",
         "layer0.tint": [
-            184,
-            174,
-            173
+            160,
+            162,
+            174
         ]
     },
     {
         "class": "icon_folder",
         "layer0.tint": [
-            154,
-            144,
-            143
+            130,
+            132,
+            144
         ]
     },
     {
         "class": "sidebar_heading",
         "color": [
-            154,
-            144,
-            143
+            130,
+            132,
+            144
         ]
     },
     {
         "border_color": [
-            154,
-            144,
-            143
+            130,
+            132,
+            144
         ],
         "class": "grid_layout_control"
     }

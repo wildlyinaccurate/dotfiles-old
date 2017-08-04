@@ -19,7 +19,7 @@ plugins=(git vagrant brew)
 
 source $ZSH/oh-my-zsh.sh
 
-HISTFILE="${HOME}/.history/$(date -u +%Y)_${HOST}"
+HISTFILE="${HOME}/.history/$(date -u +%Y)"
 HISTFILE_DIR=$(dirname $HISTFILE)
 
 if [ ! -f $HISTFILE_DIR ]; then
@@ -46,10 +46,13 @@ bindkey -e
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 
-eval $(docker-machine env default)
-
 path=("$HOME/bin" "$path[@]")
 
-nvm use system
-chruby 2.3.0
+GOPATH="$HOME/gocode"
+
+export NVM_DIR="/Users/joseph/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+nvm use 6
+chruby 2.4
 ruby -v
